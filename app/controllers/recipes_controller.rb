@@ -25,6 +25,7 @@ class RecipesController < ApplicationController
     
     def edit
         @recipe = Recipe.find(params[:id])
+        puts @recipe.name
     end
     
     def update
@@ -41,6 +42,6 @@ class RecipesController < ApplicationController
     private
         
         def recipe_params
-            params.require(:recipe).permit(:name, :summary, :description)
+            params.require(:recipe).permit(:name, :summary, :description, :picture)
         end
 end
