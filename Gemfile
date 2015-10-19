@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
+#pagination
+gem 'will_paginate', '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 #gem 'spring', '1.3.6', group: :development
 
