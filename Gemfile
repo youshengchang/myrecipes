@@ -35,6 +35,7 @@ gem 'mini_magick', '3.8.0'
 #pagination
 gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
+gem 'bcrypt', '3.1.7'
 
 #gem 'spring', '1.3.6', group: :development
 

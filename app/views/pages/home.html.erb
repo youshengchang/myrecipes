@@ -2,7 +2,7 @@
     <h1>Welcome to My Recipes Application</h1>
     <h2>This is the home page of the Professional Ruby on Rails Developer's course</h2>
     
-    <%= link_to "Sign Up Now", "", class: "btn btn-lg btn-success" %>
+    <%= link_to "Sign Up Now", register_path, class: "btn btn-lg btn-success" %>
     
 </div>
 <div class="row">
@@ -15,10 +15,10 @@
     </div>
     <div class="col-lg-4">
         <h3 class="midrow">
-            View Recipes as Guest User
+            Sign in to your account
         </h3>
-        <h2 class="left"> View Recipes as Guest User and Sign Up later</h2>
-        <p><%=link_to "Browse Recipe List", "", class: "btn btn-warning btn-small"%></p>
+        <h2 class="left"> Add/Update your recipes/create reviews/like-dislikes and much much more</h2>
+        <p><%=link_to "Login to your account", login_path, class: "btn btn-warning btn-small"%></p>
     </div>
     <div class="col-lg-4">
         <h3 class="midrow">
