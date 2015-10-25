@@ -3,6 +3,7 @@ class Recipe < ActiveRecord::Base
     has_many :likes, dependent: :destroy
     has_many :recipe_styles, dependent: :destroy
     has_many :recipe_ingredients, dependent: :destroy
+    has_many :reviews, dependent: :destroy
     
     has_many :styles, through: :recipe_styles
     has_many :ingredients, through: :recipe_ingredients

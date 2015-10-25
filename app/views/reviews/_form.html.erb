@@ -1,0 +1,15 @@
+<%= render 'shared/errors', obj:@review %>
+<div class="row">
+    <div class="well col-md-8 col-md-offset-2">
+        <%= form_for @review do |f|%>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+        
+        <%= f.label :body %>
+        <%= f.text_area :body, rows: 10%>
+        
+        <%= f.submit class: "btn btn-success"%>
+        
+        <% end %>     
+    </div>
+</div>

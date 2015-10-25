@@ -14,6 +14,9 @@ Rails.application.routes.draw do
     member do
       post 'like'
     end
+    member do
+      resources :reviews, only: [:new, :create, :index]
+    end
   end
   
   resources :chefs, except: [:new, :destroy]
@@ -26,4 +29,5 @@ Rails.application.routes.draw do
   
   resources :styles, only: [:new, :create, :show]
   resources :ingredients, only: [:new, :create, :show]
+  
 end

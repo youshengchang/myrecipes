@@ -14,6 +14,9 @@ class RecipesController < ApplicationController
     
     def show
         
+        @reviews = @recipe.reviews 
+        puts params[:id]
+        puts @reviews
     end
     
     def new

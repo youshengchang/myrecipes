@@ -20,3 +20,17 @@ email :string
 -email must be present
 -email must be unique
 -email must be valid
+
+
+Review:
+1. create a review table: body and type : link to recipes and chefs
+2. build review model
+3. build test and validation 
+4. build associations has_many, belongs_to
+5. test the model in rails console
+    - recipe.reviews
+    - chef.reviews
+6. ctreate routes
+7. only authenticated user can create reviews: before_actions: require_user
+8. you associate with recipe_id, chef_id
+9. 
