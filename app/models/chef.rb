@@ -12,4 +12,13 @@ class Chef < ActiveRecord::Base
                                       format: {with:VALID_EMAIL_REGEX}
     has_secure_password
     
+    mount_uploader :picture, PictureUploader
+    validate :picture_size
+     
+     
+    def picture_size
+        if picture.size > 5.megabytes
+            errors.add(:picture, "The picture size should be less than 5 MB")
+        end
+    end
 end

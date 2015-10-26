@@ -44,12 +44,12 @@ class ChefsController < ApplicationController
     
     def show
         #@chef = Chef.find(params[:id])
-        @recipes = @chef.recipes.paginate(page: params[:page], per_page: 1)
+        @recipes = @chef.recipes.paginate(page: params[:page], per_page: 2)
     end
     
     private
     def chef_params
-        params.require(:chef).permit(:chefname, :email, :password)
+        params.require(:chef).permit(:chefname, :email, :password, :picture)
     end
     
     def set_chef

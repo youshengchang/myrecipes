@@ -14,9 +14,9 @@ class RecipesController < ApplicationController
     
     def show
         
-        @reviews = @recipe.reviews 
-        puts params[:id]
-        puts @reviews
+        #@reviews = @recipe.reviews 
+        @reviews= @recipe.reviews.paginate(page: params[:page], per_page: 2)
+        
     end
     
     def new
