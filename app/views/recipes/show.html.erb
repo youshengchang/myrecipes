@@ -2,7 +2,7 @@
 <%= render 'shared/page_title', title: @recipe.name %>
 <div class="row">
     <div class="col-md-4 pull-right center">
-        <%= link_to (gravatar_for @recipe.chef, size:200), chef_path(@recipe.chef) %>
+        <%= link_to image_tag(@recipe.chef.picture.url, size: "150x150", class: "gravatar"), chef_path(@recipe.chef) %>
         <p>
             <h5>Brought to you by <%= @recipe.chef.chefname%></h5>
         </p>
